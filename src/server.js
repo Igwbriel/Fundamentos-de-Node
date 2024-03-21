@@ -18,11 +18,11 @@ const server = http.createServer((req, res) => {
       email: 'IsaApex@gmail.com',
     })
 
-    return res.end('Criação de úsuarios')
+    return res.writeHead(201).end()
   }
 
 
-  return res.end('hello world');
+  return res.writeHead(404).end();
 })
 
 server.listen(3333)
