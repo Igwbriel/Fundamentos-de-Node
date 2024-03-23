@@ -31,7 +31,7 @@ export class Database {
     } else {
      this.#database[table] = [data]
     }
-
+    
     this.#persist();
     return data;
   }
